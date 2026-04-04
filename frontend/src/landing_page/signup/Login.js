@@ -16,7 +16,7 @@ function Login() {
                 alert("Login successful!");
                 // In a real app, we would store the token/session and redirect to dashboard
                 // For now, let's just redirect to the dashboard URL if we know it
-                window.location.href = "http://localhost:3001";
+                window.location.href = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3001";
             }
         } catch (error) {
             console.error("Login error", error);
