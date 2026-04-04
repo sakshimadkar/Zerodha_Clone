@@ -5,7 +5,7 @@ const Summary = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings").then((res) => {
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/allHoldings`).then((res) => {
       setAllHoldings(res.data);
     });
   }, []);
