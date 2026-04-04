@@ -12,7 +12,7 @@ import {
 } from "@mui/icons-material";
 
 import { watchlist } from "../data/data";
-import { DoughnutChart } from "./DoughnoutChart";
+import { DoughnutChart } from "./DoughnutChart";
 
 const WatchList = () => {
   const [searchTerm, setSearchTerm] = useState("");
