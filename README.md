@@ -1,34 +1,88 @@
-## Zerodha Clone
-A full-stack clone of Zerodha, one of India's leading stock trading platforms. This project demonstrates a real-time stock trading dashboard with user authentication, portfolio management, and interactive stock charts. Built as a learning and demo project for full-stack development and financial tech applications.
+# Zerodha Clone
+
+A full-stack trading platform inspired by Zerodha, built to demonstrate modern web development concepts including authentication, portfolio management, REST APIs, and responsive dashboard design.
 
 ## Features
-1. User Authentication: Sign Up / Login / Logout with secure password storage.
-2. Dashboard: View portfolio summary, track holdings, investments, and balances.
-3. Stock Market Simulation: Real-time stock prices (mock or API integration), Buy & Sell functionality.
-4. Interactive Charts: Candlestick and line charts for stock trends.
-5. Responsive Design: Works on desktop and mobile.
+
+- Secure user authentication using JWT
+- Portfolio and holdings management
+- Buy and Sell order simulation
+- Transaction history tracking
+- Responsive dashboard interface
+- RESTful backend APIs
+- MongoDB database integration
 
 ## Tech Stack
--Frontend: ReactJS, BootStrap
--Backend: Node.js, Express.js
--Database: MongoDB 
--Authentication: JWT
+
+### Frontend
+- React.js
+- Bootstrap
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+
+### Authentication
+- JSON Web Tokens (JWT)
+
+## Project Structure
+
+```
+client/
+server/
+README.md
+```
 
 ## Installation
-1. Clone the repository
 
+### Clone the repository
+
+```bash
 git clone https://github.com/sakshimadkar/Zerodha_Clone.git
 cd Zerodha_Clone
+```
 
-2. Install dependencies
+### Install dependencies
 
+```bash
 npm install
+```
 
-3. Set environment variables
-Create a .env file:
+### Configure Environment Variables
+
+Create a `.env` file in the server directory.
+
+```env
 PORT=5000
-MONGO_URI=<your_mongo_connection_string>
-JWT_SECRET=<your_secret_key>
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
 
-4. Run the application
+### Run the application
+
+```bash
 npm start
+```
+
+## Learning Outcomes
+
+- Built a complete MERN Stack application.
+- Implemented JWT-based authentication.
+- Designed RESTful APIs using Express.js.
+- Worked with MongoDB for data persistence.
+- Developed reusable React components.
+- Applied responsive UI design principles.
+
+## Future Improvements
+
+- Live stock market API integration
+- Watchlist functionality
+- Price alerts
+- Advanced portfolio analytics
+- Dark mode support
+
+
